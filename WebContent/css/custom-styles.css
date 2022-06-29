@@ -1,0 +1,328 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+
+    font-family: 'fjalla_oneregular';
+    font-family: 'source_sans_proregular';
+   ========================================================================== */
+
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.eot');
+    src: url('../fonts/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fonts/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fjalla_oneregular';
+    src: url('../fonts/fjallaone-regular-webfont.eot');
+    src: url('../fonts/fjallaone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fjallaone-regular-webfont.woff') format('woff'),
+         url('../fonts/fjallaone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/fjallaone-regular-webfont.svg#fjalla_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/******************************************************************
+                Global Styles starts here
+*******************************************************************/
+
+
+body{
+	font-family: 'fjalla_oneregular';
+	font-size: 14px;
+	line-height: 14px;
+	color:#8d8c8c; 
+	background: #e4e4e4;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'fjalla_oneregular';
+	color: #000;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+h1{font-size: 30px;line-height: 36px;color: #3f4b51;}
+h2{font-size: 28px;line-height: 32px;}
+h3{font-size: 26px;line-height: 30px;}
+h4{font-size: 20px;line-height: 28px; color: #3f4b51; text-transform: uppercase;}
+h5{font-size: 18px;line-height: 22px;}
+h6{font-size: 16px;line-height: 20px; color: #2abde9; font-family: 'source_sans_proregular';}
+p{ font-family: 'source_sans_proregular'; line-height: 22px;  padding-bottom: 25px; margin-bottom: 0;}
+.last{padding-bottom: 0;}
+.wrap{overflow: hidden;}
+.bg-black{background: #364045;}
+.bg-light-black{background: #3f4b51;}
+.bg-blue{background: #2abde9;}
+.bg-white{background: #fff;}
+.bg-light-gray{background: #f7f7f7;}
+.spacing-t-b{padding: 60px 0;}
+.container-spacing-t-b{padding: 30px 0;}
+.container-spacing-t{ padding-top: 60px;}
+.container-spacing-b{ padding-bottom: 60px;}
+.spacing-t{margin-top: 50px;}
+.spacing-b{padding-bottom: 40px;}
+.spacing-top{ padding-top: 30px;}
+.img-right{ padding-right: 30px; padding-bottom: 30px;}
+.ruler-t{ border-bottom: 1px solid #f1f1f1; margin: 30px 0;}
+
+.ruler{ border: 1px solid #f1f1f1;}
+.border{ display: none;}
+.border-none{ border-bottom:none !important;}
+
+.header-wrapper{background: #3f4b51; overflow: hidden; margin-bottom: 60px; padding: 20px 0;}
+.i{
+color: #fff;
+font-size: 21px;
+display: inline-block !important;
+cursor: pointer;
+width: 20px !important;
+height: 20px !important;
+border-radius: 15%;
+text-align: center;
+position: relative;
+z-index: 1;
+
+padding: 10px;
+
+background: #2abde9;
+margin-right: 15px !important;
+float: left;
+}
+.i:hover{background: #3f4b51; color: #fff; transition:all 1s;}
+
+.menu-icons .i{
+color: #7c878b;
+font-size: 20px;
+display: inline-block !important;
+cursor: pointer;
+width: 16px !important;
+height: 16px !important;
+border-radius: 15%;
+text-align: center;
+position: relative;
+z-index: 1;
+padding: 10px;
+
+background: #364045;
+margin-right: 10px !important;
+}
+
+.menu-icons .i:hover{background: #2abde9; color: #fff; text-decoration: none;}
+
+
+
+.btn{background: #2abde9; color: #fff; font-size: 16px; padding: 10px 5px;box-shadow: none; text-transform: uppercase; text-shadow: none;border: none; font-family: 'fjalla_oneregular';}
+.btn:hover{background: #fff; color: #2abde9; transition:all 1s;} 
+.site-name{display: inline-block;text-transform: uppercase; float: left;}
+.site-name h1{color: #fff;font-size: 30px;line-height: 36px;font-family: 'fjalla_oneregular'; margin: 0;}
+.menu-icons{float: right; display: inline-block;}
+.menu-icons ul{margin: 0; overflow: hidden;}
+.menu-icons ul li{list-style: none; display: inline-block;text-decoration: none;float: left;}
+.cust-form{display: none;}
+.form-search input{background: #364045;color: #7c878b;border: none;}
+.form-search [class^="icon-"]{color: #7c878b;}
+ #custom-search-form {
+        margin:0;
+        padding: 0;
+        margin-right: -24px;
+    }
+ 
+    #custom-search-form .search-query {
+        
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        padding-bottom:10px; 
+    }
+ 
+    #custom-search-form button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+
+/******************************************************************
+                Menu Styles starts here
+*******************************************************************/
+
+.menu{text-align: center; border-radius: 5px 5px 0 0;background: #2abde9;}
+.menu .navbar{height: 68px;}
+.navbar{display: inline-block; margin-bottom: 0; }
+.navbar .nav{ display: inline-block;}
+.navbar .nav > li {font-family: 'fjalla_oneregular'; }
+.navbar .nav > li a{color: #fff;padding: 25px 30px;border-right: 1px solid #55caed;text-shadow: none;
+                    text-transform: uppercase; display: inline-block; float: left; }
+.navbar .nav > li a:hover{background: #55caed;box-shadow: none;color: #fff;}
+.navbar .nav > .active > a{background: #55caed;box-shadow: none;color: #fff;}
+.navbar .nav > .active > a:hover{box-shadow: none; background: none;}
+
+.banner .carousel{margin-bottom: 0;}
+.banner .carousel-control {
+top: 50%;
+font-size: 27px;
+color: #4496bc;
+background: #fff;
+line-height: 40px;
+opacity: 0.5;
+border: none;
+}
+
+.mini-menu{display: none;}
+    .mini-menu .selectnav{display: none; width: 100%;background: #3f4b51;font-weight: 600;padding: 10px;height: 42px; color: #fff; border-radius: 5px; cursor: pointer; outline: 0; border:none !important;}
+    .selectnav select{appearance: none; border:none !important;}
+    .mini-menu label {position:relative; width: 100%;}
+    .mini-menu label:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#fff;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:14px; top:14px;
+    padding:0 0 2px;
+
+    position:absolute;
+    pointer-events:none;
+    }
+    .mini-menu label:before {
+    content:'';
+    right:6px; top:10px;
+    width: 25px; height: 25px;
+    background:#3f4b51;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+    }
+
+
+
+/******************************************************************
+                Generic Styles starts here
+*******************************************************************/
+
+
+.block{ overflow: hidden;}
+.main-caption{text-align: center; padding: 40px 0;font-family: 'fjalla_oneregular';text-transform: uppercase;}
+.main-caption h1{font-size: 30px; line-height: 38px; color: #3f4b51;}
+.main-caption h6{color: #3f4b51; font-family: 'fjalla_oneregular'; padding-bottom: 15px;}
+.main-caption .btn {
+background: #3f4b51;
+color: #fff;
+text-shadow: none;
+box-shadow: none;
+border: none;
+border-bottom: none;
+text-transform: uppercase;
+padding: 12px;
+
+}
+.main-caption .btn:hover{background: #2abde9;color: #fff;}
+
+.featured-images{ overflow: hidden;text-align: center; padding: 60px 30px;}
+.featured-images ul{margin: 0;}
+.featured-images h4{ text-transform: uppercase; color: #3f4b51; }
+.featured-images h6{ font-family: 'source_sans_proregular'; color: #8d8c8c; }
+
+.featured-images .block{ padding-bottom: 40px; text-align: center; background: url(../img/dot.jpg) no-repeat 50% 75%;}
+.dot{background: url(../img/dot.png) repeat-x 0;}
+
+.featured-images .block-content{ padding-top: 20px; text-align: center;}
+.featured-images .block-content .user-info{display: inline-block; padding-right: 30px;}
+.featured-images .block-content .user-info h4{color: #2abde9; padding-top: 20px;}
+.featured-images .block-content .user-info h6{color: #8d8c8c;}
+
+
+
+
+.featured-blocks{padding: 60px 30px;background: #f7f7f7;}
+.featured-blocks .grid li a{display: inline-block;}
+.featured-blocks .block .block-title{padding-bottom: 20px;}
+.featured-item{ text-align: center; padding-top: 40px;}
+.featured-item img{ padding-right: 30px; }
+
+.featured-content{padding: 60px 30px; background: #fff; border-radius: 0 0 5px 5px; overflow: hidden;}
+.featured-content img{width: 100% !important;}
+.featured-content .block{padding-left: 10px;}
+.featured-content .block h6{padding-bottom: 10px;}
+.featured-content .block .block-title{padding-bottom: 20px;}
+.featured-content .contact-form .block-title{padding-bottom: 20px;}
+.featured-content .block .block-title img{float: left;}
+.block-content{ }
+.block-content p{ line-height: 22px;}
+
+.block .btn{background: #2abde9; color: #fff; text-transform: uppercase; font-size: 16px; padding: 7px 9px;box-shadow: none; text-shadow: none;border: none; font-family: 'fjalla_oneregular';}
+.btn:hover{background: #3f4b51; color: #fff;} 
+.block a i{
+color: #fff;
+padding-left: 5px;
+}
+.block-content form input, textarea{
+ background: #f7f7f7;
+ padding: 18px 08px;
+ margin-bottom: 20px;
+ font-size: 14px;
+ border: 1px solid #ebebeb;
+ color: #b2b2b2;font-family: 'source_sans_proregular';
+}
+.block-content form textarea{padding: 10px 8px;}
+
+.block-content p{
+    margin-bottom: 0;
+}
+/******************************************************************
+                Footer Styles starts here
+*******************************************************************/
+.site-footer{ margin-top: 40px; background: #3f4b51; padding: 60px 0;}
+.site-footer .block h5{color: #fff; font-family: 'fjalla_oneregular'; text-transform: uppercase; font-size: 20px; line-height: 26px;}
+.site-footer .block ul{ margin: 0; margin-top: 12px;}
+.site-footer .block ul li{  font-size: 14px; padding:10px 0; border-bottom: 1px solid #4c5b61; list-style: none;font-family: 'source_sans_proregular';}
+.site-footer .block ul li a{color: #8099a1;  }
+.site-footer .block ul li a:hover{color: #fff; text-decoration: none;}
+.copy-rights{
+    padding: 40px 0; color: #8099a1; font-family: 'source_sans_proregular'; font-size: 14px; line-height: 26px;
+}
+.copy-rights a{color: #8099a1;}
+.copy-rights span{color:#2abde9;}
+.copy-rights span a{color:#2abde9; }
+.copy-rights a:hover{color:#ffffff; text-decoration: none; }
+
+
+/******************************************************************
+                Responsive Tweaks starts here
+*******************************************************************/
+
+
+.navbar .btn-navbar{float: left;  text-shadow: none; background: #3f4b51; color: #fff; margin-bottom: 5px; margin-left: 0; margin-right: 0;}
+.navbar .btn-navbar:hover{ background: #fff; color: #2abde9;}
